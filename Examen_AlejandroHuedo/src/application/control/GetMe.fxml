@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Rectangle2D?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="500.0" styleClass="pane1" stylesheets="@application.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.control.Control">
+   <children>
+      <Pane fx:id="pane1" prefHeight="300.0" prefWidth="400.0" style="-fx-background-color: #008080;" styleClass="pane1" stylesheets="@application.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fitHeight="500.0" fitWidth="750.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true" scaleZ="0.0" styleClass="pane1">
+               <image>
+                  <Image url="@../view/bosque.jpg" />
+               </image>
+               <viewport>
+                  <Rectangle2D height="750.0" width="750.0" />
+               </viewport>
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+            </ImageView>
+         </children></Pane>
+      <Pane prefHeight="354.0" prefWidth="306.0" style="-fx-background-color: bbbbbb99; -fx-background-radius: 50px;" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+         <children>
+            <ImageView fitHeight="100.0" fitWidth="350.0" layoutX="100.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../view/blueforest.jpg" />
+               </image>
+            </ImageView>
+            <JFXButton layoutX="168.0" layoutY="309.0" style="-fx-background-radius: 5px;" text="FORGOT YOUR PASSWORD?" textFill="WHITE" underline="true" />
+            <JFXPasswordField focusColor="WHITE" labelFloat="true" layoutX="152.0" layoutY="202.0" prefWidth="200.0" promptText="PASSWORD" style="-fx-background-color: black; -fx-background-radius: 5px;" unFocusColor="BLACK" />
+            <JFXTextField labelFloat="true" layoutX="152.0" layoutY="159.0" prefHeight="25.0" prefWidth="200.0" promptText="USERNAME" style="-fx-background-color: black; -fx-background-radius: 5px;" unFocusColor="#4d4d4d" />
+            <JFXButton layoutX="152.0" layoutY="252.0" prefHeight="35.0" prefWidth="200.0" style="-fx-background-color: white; -fx-background-radius: 5px;" text="GET STARTED" />
+            <ImageView fitHeight="102.0" fitWidth="186.0" layoutX="46.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../view/profilephoto.png" />
+               </image>
+            </ImageView>
+            <JFXButton fx:id="boton" layoutX="32.0" layoutY="252.0" onAction="#closeStage" prefHeight="35.0" prefWidth="100.0" style="-fx-background-color: white; -fx-background-radius: 5px;" text="EXIT" />
+         </children>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Pane>
+   </children>
+</AnchorPane>
